@@ -1,0 +1,13 @@
+.container{
+  width: 100%;
+  background-color: #110E1B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+
+  span{
+    padding: 1rem;
+    color: var(--white);
+  }
+}

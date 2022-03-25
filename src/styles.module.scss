@@ -1,0 +1,29 @@
+.container{
+  width: 100vw;
+  height: 100vh
+}
+
+.content{
+  width: 100%;
+  background-color: #0E091B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  @media(max-width: 1048px){
+    margin-top: 9rem;
+  }
+  @media(max-width: 720px){
+    margin-top: 8rem;
+  }
+  @media(max-width: 600px){
+    margin-top: 7rem;
+  }
+  @media(max-width: 500px){
+    margin-top: 2rem;
+  }
+  @media(max-width: 400px){
+    margin-top: 0rem;
+  }
+}
