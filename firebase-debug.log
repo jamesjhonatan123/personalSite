@@ -1,0 +1,27 @@
+[debug] [2022-03-25T18:32:50.178Z] ----------------------------------------------------------------------
+[debug] [2022-03-25T18:32:50.181Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-03-25T18:32:50.182Z] CLI Version:   10.5.0
+[debug] [2022-03-25T18:32:50.182Z] Platform:      linux
+[debug] [2022-03-25T18:32:50.182Z] Node Version:  v17.4.0
+[debug] [2022-03-25T18:32:50.183Z] Time:          Fri Mar 25 2022 15:32:50 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2022-03-25T18:32:50.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-25T18:32:50.287Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-25T18:32:50.288Z] > authorizing via signed-in user (jamesjhonatan123@gmail.com)
+[debug] [2022-03-25T18:32:50.288Z] [iam] checking project devjonatas-d77e6 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-25T18:32:50.291Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/devjonatas-d77e6:testIamPermissions [none]
+[debug] [2022-03-25T18:32:50.292Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/devjonatas-d77e6:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-25T18:32:51.492Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/devjonatas-d77e6:testIamPermissions 200
+[debug] [2022-03-25T18:32:51.493Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/devjonatas-d77e6:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-25T18:32:51.495Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/devjonatas-d77e6 [none]
+[debug] [2022-03-25T18:32:52.810Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/devjonatas-d77e6 200
+[debug] [2022-03-25T18:32:52.810Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/devjonatas-d77e6 {"projectId":"devjonatas-d77e6","projectNumber":"1057046274902","displayName":"devjonatas","name":"projects/devjonatas-d77e6","resources":{"hostingSite":"devjonatas-d77e6"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'devjonatas-d77e6'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-03-25T18:32:52.815Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/devjonatas-d77e6 [none]
+[debug] [2022-03-25T18:32:53.477Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/devjonatas-d77e6 200
+[debug] [2022-03-25T18:32:53.477Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/devjonatas-d77e6 {"projectId":"devjonatas-d77e6","projectNumber":"1057046274902","displayName":"devjonatas","name":"projects/devjonatas-d77e6","resources":{"hostingSite":"devjonatas-d77e6"},"state":"ACTIVE"}
+[debug] [2022-03-25T18:32:53.480Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1057046274902/sites/devjonatas-d77e6/versions [none]
+[debug] [2022-03-25T18:32:53.480Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1057046274902/sites/devjonatas-d77e6/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
