@@ -20,7 +20,6 @@
     img {
       max-width: 70%;
       max-height: 1000px;
-      transform: scale(0.5);
       filter: brightness(0.9);
       border-radius: 50%;
     }
@@ -72,9 +71,16 @@
     align-items: center;
     justify-content: center;
 
-    h2,
-    p {
-      text-align: center;
+    .about {
+      margin: 0;
+      h2 {
+        font-size: 2rem;
+      }
+
+      h2,
+      p {
+        text-align: center;
+      }
     }
   }
 }
