@@ -12,7 +12,7 @@ export const Header = () => {
           <a href='#whoIAm'>Quem sou</a>
           <a href='#portfolio'>Portfólio</a>
           <a href='#services'>Serviços</a>
-          <a href='#'>Conhecimentos</a>
+          <a href='#know'>Conhecimentos</a>
         </nav>
       </div>
     </Fragment>
