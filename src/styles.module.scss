@@ -1,29 +1,29 @@
-.container{
+.container {
   width: 100vw;
-  height: 100vh
+  height: 100vh;
 }
 
-.content{
+.content {
   width: 100%;
-  background-color: #0E091B;
+  background-color: #0e091b;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  @media(max-width: 1048px){
+  @media (max-width: 1048px) {
     margin-top: 9rem;
   }
-  @media(max-width: 720px){
+  @media (max-width: 720px) {
     margin-top: 8rem;
   }
-  @media(max-width: 600px){
+  @media (max-width: 600px) {
     margin-top: 7rem;
   }
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     margin-top: 2rem;
   }
-  @media(max-width: 400px){
+  @media (max-width: 400px) {
     margin-top: 0rem;
   }
 }
