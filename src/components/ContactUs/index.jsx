@@ -10,6 +10,14 @@ export const ContactUs = () => {
   async function sendEmail(e) {
     e.preventDefault()
 
+    if (!(phone || email)) {
+      return alert("é necessário enviar telefone ou email")
+    }
+
+    if (!(message)) {
+      return alert("Não é possível enviar a mensagem sem corpo")
+    }
+
     await axios.post('https://api.emailjs.com/api/v1.0/email/send', {
       service_id: 'service_5p3qk58',
       template_id: 'template_9cpg1sn',
@@ -31,17 +39,19 @@ export const ContactUs = () => {
   }
 
   return (
-    <div className={styles.content}>
+    <div id="contactus" className={styles.content}>
       <h2>Contate-nos</h2>
-      <form className={styles.form}>
-        <label htmlFor="name">Nome : <input id='name' value={name} type="text" onChange={(e) => setName(e.currentTarget.value)} /></label>
-        <label htmlFor="phone">Telefone : <input id='phone' value={phone} type="text" onChange={(e) => setPhone(e.currentTarget.value)} /></label>
-        <label htmlFor="telefone">Email : <input id='email' value={email} type="text" onChange={(e) => setEmail(e.currentTarget.value)} /></label>
+      <form onSubmit={sendEmail} className={styles.form}>
+        <div class={styles.grid}>
+          <label htmlFor="name">Nome :</label><input id='name' value={name} type="text" onChange={(e) => setName(e.currentTarget.value)} />
+          <label htmlFor="phone">Telefone : </label><input required type="tel" id='phone' value={phone} onChange={(e) => setPhone(e.currentTarget.value)} />
+          <label htmlFor="telefone">Email : </label><input id='email' value={email} type="email" onChange={(e) => setEmail(e.currentTarget.value)} />
+        </div>
         <textarea name="message" id="message" cols="30" rows="10"
           placeholder='digite sua mensagem aqui'
           value={message} type="text" onChange={(e) => setMessage(e.currentTarget.value)}>
         </textarea>
-        <input type="submit" onClick={sendEmail} value="Enviar formulário" />
+        <input type="submit" value="Enviar" />
       </form>
     </div >
   )
