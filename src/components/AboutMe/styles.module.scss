@@ -5,8 +5,7 @@
 
   img {
     max-width: 70%;
-    max-height: 1000px;
-    transform: scale(0.75);
+    max-height: 900px;
     filter: brightness(0.9);
     border-radius: 50%;
     transition-duration: 2000ms;
@@ -23,10 +22,6 @@
     }
     transform: translatey(0px);
     animation: fly 6s ease-in-out infinite;
-  }
-
-  img:hover {
-    transform: scale(0.9);
   }
 
   @media (max-width: 500px) {
