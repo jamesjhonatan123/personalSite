@@ -42,10 +42,10 @@ export const ContactUs = () => {
     <div id="contactus" className={styles.content}>
       <h2>Contate-nos</h2>
       <form onSubmit={sendEmail} className={styles.form}>
-        <div class={styles.grid}>
+        <div className={styles.grid}>
           <label htmlFor="name">Nome :</label><input id='name' value={name} type="text" onChange={(e) => setName(e.currentTarget.value)} />
           <label htmlFor="phone">Telefone : </label><input required type="tel" id='phone' value={phone} onChange={(e) => setPhone(e.currentTarget.value)} />
-          <label htmlFor="telefone">Email : </label><input id='email' value={email} type="email" onChange={(e) => setEmail(e.currentTarget.value)} />
+          <label htmlFor="email">Email : </label><input id='email' value={email} type="email" onChange={(e) => setEmail(e.currentTarget.value)} />
         </div>
         <textarea name="message" id="message" cols="30" rows="10"
           placeholder='digite sua mensagem aqui'
