@@ -2,6 +2,7 @@ import { AboutMe } from './components/AboutMe';
 import { Footer } from './components/Footer';
 import { Portfolio } from './components/Portfolio';
 import { Services } from './components/Services';
+import { ContactUs } from './ContactUs';
 import styles from './styles.module.scss'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <AboutMe />
         <Portfolio />
         <Services />
+        <ContactUs />
         <Footer />
       </div>
     </div>

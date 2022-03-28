@@ -14,10 +14,12 @@
     padding: 5rem 0;
     .card {
       max-width: 300px;
+      max-height: 250px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      border-radius: 5%;
       background-color: #0e091b;
       margin: 0 1rem 1rem 1rem;
       padding: 2rem 0.5rem;
@@ -30,7 +32,7 @@
       p {
         text-align: center;
         font-size: 1.25rem;
-        max-width: 400px;
+        max-width: 300px;
         color: var(--white);
       }
       transition: transform 500ms ease-in-out;
@@ -40,7 +42,20 @@
       }
 
       @media (max-width: 720px) {
-        padding: 0;
+        padding: 0 1rem;
+
+        span {
+          margin: 2rem 0;
+          font-size: 1.75rem;
+          color: var(--white);
+          white-space: nowrap;
+        }
+        p {
+          text-align: center;
+          font-size: 1.25rem;
+          max-width: 300px;
+          color: var(--white);
+        }
       }
     }
   }
