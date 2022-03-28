@@ -10,7 +10,7 @@ export const Portfolio = () => {
     <div id="portfolio" className={styles.container}>
       <h2>Projetos</h2>
       <div className={styles.content}>
-        <a href="https://tecertifica-b3aaa.web.app/">
+        <a target="_blank" href="https://tecertifica-b3aaa.web.app/" rel="noreferrer">
           <div className={styles.card}>
             <span >TeCertifica</span>
             <p>
@@ -21,7 +21,7 @@ export const Portfolio = () => {
             <img src={project1} alt='project 1' />
           </div>
         </ a>
-        <a href="https://type-pcal-jamesjhonatan123.vercel.app/">
+        <a target="_blank" href="https://type-pcal-jamesjhonatan123.vercel.app/" rel="noreferrer">
           <div className={styles.card}>
             <span href="https://type-pcal-jamesjhonatan123.vercel.app/">TypePCAL</span>
             <p>
@@ -32,6 +32,9 @@ export const Portfolio = () => {
           </div>
         </a>
       </ div>
+      <a target='_blank' href="https://github.com/jamesjhonatan123?tab=repositories" rel="noreferrer">
+        <span >Acesse o repositório no Github para mais projetos</span>
+      </a>
     </ div >
   )
 }
