@@ -5,8 +5,29 @@
   align-items: center;
   justify-content: center;
 
+  // @media only screen and (min-device-width: 1080px) {
+  //   animation: slide 1s ease 1;
+  //   animation-play-state: paused;
+  //   animation-delay: calc(var(--scroll) * -0.13s);
+
+  //   @keyframes slide {
+  //     0% {
+  //       transform: translateX(1800px);
+  //     }
+  //     100% {
+  //       transform: translateX(0);
+  //     }
+  //   }
+  // }
+
   .form {
     width: 50%;
+    @media (max-width: 1080px) {
+      width: 60%;
+    }
+    @media (max-width: 720px) {
+      width: 70%;
+    }
     display: flex;
     margin-top: 5rem;
     padding: 5rem;
@@ -24,57 +45,44 @@
       flex-wrap: nowrap;
     }
 
-    @media (min-width: 1600px) {
-      .grid {
-        display: grid;
-        grid-template-columns: 0.1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 1rem;
-      }
-    }
-
     input {
-      width: 25rem;
       background-color: #0e091b;
       color: white;
-      border: 1px inset white;
-      margin-left: 1rem;
       box-shadow: 10px 5px 5px black;
       &[type="submit"] {
         width: 15rem;
+        padding: 0.5rem;
+        align-self: center;
+        &:hover {
+          cursor: pointer;
+          filter: brightness(10);
+          color: black;
+        }
       }
       &:focus {
-        transform: scale(1.1);
+        transform: scale(1.01);
       }
     }
     label {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
       color: white;
+      input {
+        max-width: 400px;
+        margin: 0.5rem 0;
+        padding: 0.25rem;
+        border: 1px inset white;
+      }
     }
     textarea {
+      resize: none;
+      padding: 1rem;
       background-color: #0e091b;
       color: white;
       box-shadow: 10px 5px 5px black;
-    }
-
-    @media (max-width: 700px) {
-      width: 70%;
-      input {
-        width: 20rem;
-      }
-      input[type="submit"] {
-        width: 10rem;
-      }
-      textarea {
-        width: 30rem;
-        margin-top: 1rem;
-      }
-      label {
-        margin: 0.5rem 0;
-      }
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      margin-left: 0;
+      border: 1px inset white;
     }
   }
 
