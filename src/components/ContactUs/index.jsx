@@ -43,9 +43,9 @@ export const ContactUs = () => {
       <h2>Contate-nos</h2>
       <form onSubmit={sendEmail} className={styles.form}>
         <div className={styles.grid}>
-          <label htmlFor="name">Nome :</label><input id='name' value={name} type="text" onChange={(e) => setName(e.currentTarget.value)} />
-          <label htmlFor="phone">Telefone : </label><input required type="tel" id='phone' value={phone} onChange={(e) => setPhone(e.currentTarget.value)} />
-          <label htmlFor="email">Email : </label><input id='email' value={email} type="email" onChange={(e) => setEmail(e.currentTarget.value)} />
+          <label htmlFor="name">Nome :<input id='name' value={name} type="text" onChange={(e) => setName(e.currentTarget.value)} /></label>
+          <label htmlFor="phone">Telefone : <input required type="tel" id='phone' value={phone} onChange={(e) => setPhone(e.currentTarget.value)} /></label>
+          <label htmlFor="email">Email : <input id='email' value={email} type="email" onChange={(e) => setEmail(e.currentTarget.value)} /></label>
         </div>
         <textarea name="message" id="message" cols="30" rows="10"
           placeholder='digite sua mensagem aqui'
